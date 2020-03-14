@@ -5,8 +5,6 @@ import { Marker } from '../classes/marker.class';
   providedIn: 'root'
 })
 export class SaveMarkersService {
-  constructor() {}
-
   persistMarkers(markers: Marker[]): void {
     localStorage.setItem('markers', JSON.stringify(markers));
   }
